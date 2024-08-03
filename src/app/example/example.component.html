@@ -1,0 +1,10 @@
+<!-- <h2 style="color: blue;">{{ title }}</h2>
+<button (click)="changeTitle()">Change Title</button>
+
+<p>{{rando}}</p> -->
+
+<!-- <button>{{ value }}</button> -->
+
+<button nbButton *ngIf="!value">{{ value }}</button>
+<button nbButton hero status="success" *ngIf="value == 'X'">{{ value }}</button>
+<button nbButton hero status="info" *ngIf="value == 'O'">{{ value }}</button>
